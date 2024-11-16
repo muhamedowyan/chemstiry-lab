@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Distribution and Element Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btnGroup">
+        <button onclick="toggleLanguage('ar')" class="toggleLanguage" id="ar">العربية</button>
+        <button onclick="toggleLanguage('en')" class="toggleLanguage" id="en">English</button>
+    </div>
+
+    <label for="atomicNumber" id="atomicNumberLabel">Atomic Number</label>
+    <input type="number" id="atomicNumber" min="1" required>
+
+    <label for="distributionType" id="distributionTypeLabel">Choose Distribution Type</label>
+    <select id="distributionType">
+        <option value="traditional" id="traditionalOption">Traditional Distribution</option>
+        <option value="nearestInertGas" id="nearestInertGasOption">Distribution According to Nearest Inert Gas</option>
+    </select>
+
+    <button onclick="calculate()" id="calculateButton" class="calculateButton">Calculate</button>
+    <div class="element-name" id="elementName"></div>
+    <div class="result" id="result"></div>
+    <script src="toggleLanguage.js"></script>
+    <script src="elements.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
